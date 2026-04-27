@@ -1,4 +1,4 @@
-// 1. ACCESS CONFIG (Warrior Rule: Keep your keys secret!)
+// 1. ACCESS CONFIG
 const CONFIG = {
     GEMINI: {
         key: "INSERT", 
