@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "EduLexic Phantom // Omni-Node",
+  "version": "3.0.0",
+  "description": "Universal Logic Bridge for the 1,200 Node Fleet.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*.sparxmaths.uk/*",
+    "https://*.sparx-learning.com/*",
+    "https://*.ixl.com/*",
+    "https://*.i-ready.com/*",
+    "https://*.khanacademy.org/*",
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.deepseek.com/*",
+    "https://api.groq.com/*",
+    "https://openrouter.ai/*"
+  ],
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.sparxmaths.uk/*",
+        "https://*.ixl.com/*",
+        "https://*.i-ready.com/*",
+        "https://*.khanacademy.org/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

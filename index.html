@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EduLexic Phantom v1.0.0 // Phase 2 Deployment</title>
+</head>
+<body>
+    <div class="phantom-container" id="main-ui">
+        <header>
+            <div class="status-dot-container">
+                <div class="status-dot" id="global-status-dot"></div>
+                <span class="pulse-text">SYSTEM LIVE</span>
+            </div>
+            <h1>PHANTOM <span class="marshmallow-text">MARSHMALLOW</span></h1>
+            <span class="version">v1.0.0 // HARDHERO PHASE 2</span>
+        </header>
+
+
+        <section class="main-dashboard">
+            <div class="stats-row">
+                <div class="stat-box">
+                    <label>SYNC STATUS</label>
+                    <div id="sync-status" class="value text-neon">STABLE</div>
+                </div>
+                <div class="stat-box">
+                    <label>WARRIOR NODES</label>
+                    <div class="value">1,200</div>
+                </div>
+            </div>
+
+            <div class="quota-monitor">
+                <div class="quota-header">
+                    <label>GEMINI 3.1 QUOTA</label>
+                    <span id="quota-percent">100%</span>
+                </div>
+                <div class="progress-bar">
+                    <div id="quota-fill" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="terminal-emulator">
+                <div class="terminal-header">
+                    <span>LOGIC_FLOW_MONITOR</span>
+                    <button id="clear-terminal" class="mini-btn">CLEAR</button>
+                </div>
+                <div id="terminal-output" class="output">
+                    [SYSTEM] Handshake Test: PASSED<br>
+                    [SYSTEM] API Payload: VALIDATED<br>
+                    [SYSTEM] Waiting for Bridge initialization...
+                </div>
+            </div>
+
+            <div class="bridge-panel">
+                <div class="bridge-header">
+                    <span>PHANTOM LOGIC BRIDGE</span>
+                    <div id="bridge-light" class="indicator-off"></div>
+                </div>
+                <div id="output" class="log-small">[SYSTEM] Bridge idle. Scanning active.</div>
+                <button id="bridge-btn" class="warrior-btn-secondary">SCAN SPARX TABS</button>
+            </div>
+
+            <div class="action-row">
+                <button id="solve-btn" class="warrior-btn">EXECUTE GLOBAL SYNC</button>
+                <button id="stealth-btn" class="stealth-toggle">STEALTH ON</button>
+            </div>
+        </section>
+
+        <footer>
+            <p>COMPLIANCE: CMA SECTION 1/3A | GDPR ANONYMOUS</p>
+        </footer>
+    </div>
+</body>
+</html>
